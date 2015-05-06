@@ -94,7 +94,7 @@ main(int argc, char **argv)
 
 	OpenSSL_add_all_algorithms();
 
-	pkey = EC_KEY_new_by_curve_name(NID_secp256k1);
+	pkey = EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
 
 	if (generate) {
 		unsigned char *pend = (unsigned char *) pbuf;
@@ -141,7 +141,7 @@ main(int argc, char **argv)
 		BIGNUM bntmp, bntmp2;
 		EC_KEY *pkey2;
 
-		pkey2 = EC_KEY_new_by_curve_name(NID_secp256k1);
+		pkey2 = EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
 		res = vg_decode_privkey_any(pkey2, &privtype, key2_in, NULL);
 		if (res < 0) {
 			if (EVP_read_pw_string(pwbuf, sizeof(pwbuf),

@@ -43,7 +43,7 @@
 EC_KEY *
 vg_exec_context_new_key(void)
 {
-	return EC_KEY_new_by_curve_name(NID_secp256k1);
+	return EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
 }
 
 /*
@@ -1397,9 +1397,10 @@ vg_prefix_context_add_patterns(vg_context_t *vcp,
 			ats = "testnet";
 			bw = "\"m\" or \"n\"";
 			break;
-		case 52:
-			ats = "namecoin";
-			bw = "\"M\" or \"N\"";
+		case 73:
+                        fprintf(stderr, "made it to switch but problem \n");
+			ats = "woodcoin";
+			bw = "\"W\"";
 			break;
 		default:
 			break;

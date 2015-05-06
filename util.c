@@ -837,7 +837,7 @@ vg_pkcs8_decode_privkey(EC_KEY *pkey, const char *pem_in, const char *pass)
 		goto out;
 
 	/* Expect a specific curve */
-	test_key = EC_KEY_new_by_curve_name(NID_secp256k1);
+	test_key = EC_KEY_new_by_curve_name(NID_X9_62_prime256v1);
 	if (!test_key ||
 	    EC_GROUP_cmp(EC_KEY_get0_group(pkey_in),
 			 EC_KEY_get0_group(test_key),
