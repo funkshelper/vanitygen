@@ -1,6 +1,16 @@
 Linux/OSX with GNU make:
 make
 
+    You may need to install libpcre, examples:
+
+	sudo apt-get install libpcre3-dev
+	sudo yum install pcre-devel
+	
+
+    Or on a Mac:
+
+	brew install pcre
+
 Windows:
 Tools: Microsoft Visual Studio 2010, Visual C++
 Prerequisites:

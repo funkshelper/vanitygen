@@ -2,6 +2,8 @@
 This version of vanitygen was forked from Samr7's lovely C code,
 by funkenstein the dwarf, to make vanity addresses for Woodcoin.
 
+See INSTALL for instructions if you are having trouble making this program.
+
 DO NOT USE THIS FORK TO CREATE BITCOIN ADDRESSES ON MAINNET BITCOIN
 
 DO NOT USE THIS FORK TO CREATE ANYTHING BUT WOODCOIN ADDRESSES
